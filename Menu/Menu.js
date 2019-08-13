@@ -33,3 +33,17 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
+
+function menuCreator(array){
+  const menu = document.createElement('div');
+  menu.classList.add('menu');
+  const unOrderedList = document.createElement('ul');
+  array.forEach(items =>{
+    let li = document.createElement('li');
+    li.textContent =  items;
+    return unOrderedList.appendChild(li) 
+  })
+  console.log(unOrderedList)
+}
+
+menuCreator(menuItems)

@@ -85,6 +85,13 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Side of eggs and hashbrowns is optional.',
+    date: 'Jan 1st, 2019',
+    firstParagraph: 'Bacon ipsum dolor amet short loin kielbasa alcatra beef ribs. Salami sirloin doner brisket fatback short loin shankle ham hock porchetta. Kielbasa beef jerky, ground round swine shank jowl drumstick brisket boudin meatloaf turkey. Spare ribs turducken ribeye short ribs rump pork chop beef chuck biltong kevin shankle doner strip steak boudin ham hock. Tongue turkey shankle bresaola jowl. Frankfurter andouille landjaeger ground round drumstick.',
+    secondParagraph: "Biltong pastrami kielbasa chuck, turkey ball tip venison pancetta jowl prosciutto strip steak cupim shankle alcatra frankfurter. Shank bresaola ham short ribs turducken flank strip steak pastrami kielbasa picanha brisket burgdoggen ribeye. Venison pork belly short ribs sausage, shoulder leberkas alcatra prosciutto capicola landjaeger rump pork. Chuck cupim bresaola ribeye alcatra chicken kielbasa meatloaf shank. Ham hock ribeye turkey, pancetta fatback pig leberkas hamburger shoulder drumstick alcatra tongue. Jowl shank spare ribs drumstick prosciutto. Ball tip meatball fatback doner drumstick ham hock.",
+    thirdParagraph: 'Andouille meatloaf turducken strip steak. Pork belly strip steak frankfurter jowl. Ball tip porchetta shankle rump frankfurter strip steak, spare ribs jowl t-bone. Corned beef shank ribeye short ribs.'
   }
 ];
 
