@@ -116,25 +116,25 @@ const data = [
 function componentCreator(args){
   const divArticle = document.createElement('div');
   const h2Article = document.createElement('h2');
-  h2Article.textContent = args.title;
+  h2Article.innerText = args.title;
   const pArticle = document.createElement('p');
-  pArticle.textContent = args.firstParagraph;4
+  pArticle.innerText = args.firstParagraph;4
   const articelDate = document.createElement('p');
   articelDate.classList.add('date')
-  articelDate.textContent = args.date;
+  articelDate.innerText = args.date;
   const pArticle2 = document.createElement('p');
-  pArticle2.textContent = args.secondParagraph;
+  pArticle2.innerText = args.secondParagraph;
   const pArticle3 = document.createElement('p');
-  pArticle3.textContent = args.thirdParagraph;
+  pArticle3.innerText = args.thirdParagraph;
   // span expand button;
   const spanButton = document.createElement('span');
   spanButton.classList.add('expandButton');
-  spanButton.textContent = 'Expand';
+  spanButton.innerText = 'Expand';
   spanButton.addEventListener("click", e=>{
     e.preventDefault();
-    console.log("hello")
-    spanButton.classList.toggle('article-open');
+    divArticle.classList.toggle('article-open');
     console.log(spanButton)
+    console.log(divArticle)
   })
   
   // appending Child elements to the article div
@@ -151,8 +151,8 @@ function componentCreator(args){
 let div = document.querySelector('.articles')
 function dataIterator (args){
   args.forEach(htmlElemText =>{
-     componentCreator(htmlElemText);
-    div.appendChild(componentCreator(htmlElemText))
+      let e = componentCreator(htmlElemText)
+    div.appendChild(e)
   });
 };
 dataIterator(data);
