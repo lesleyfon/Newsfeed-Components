@@ -126,9 +126,16 @@ function componentCreator(args){
   pArticle2.textContent = args.secondParagraph;
   const pArticle3 = document.createElement('p');
   pArticle3.textContent = args.thirdParagraph;
+  // span expand button;
   const spanButton = document.createElement('span');
-  spanButton.classList.add('expandButton');4
-  spanButton.textContent = 'Expand'
+  spanButton.classList.add('expandButton');
+  spanButton.textContent = 'Expand';
+  spanButton.addEventListener("click", e=>{
+    e.preventDefault();
+    console.log("hello")
+    spanButton.classList.toggle('article-open');
+    console.log(spanButton)
+  })
   
   // appending Child elements to the article div
   divArticle.classList.add('article')
@@ -145,7 +152,6 @@ let div = document.querySelector('.articles')
 function dataIterator (args){
   args.forEach(htmlElemText =>{
      componentCreator(htmlElemText);
-     console.log(componentCreator(htmlElemText));
     div.appendChild(componentCreator(htmlElemText))
   });
 };
