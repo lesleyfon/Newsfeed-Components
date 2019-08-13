@@ -113,17 +113,41 @@ const data = [
 
 */
 
-function componentCreator(){
+function componentCreator(args){
   const divArticle = document.createElement('div');
   const h2Article = document.createElement('h2');
+  h2Article.textContent = args.title;
   const pArticle = document.createElement('p');
-  const spanButton = document.createElement('span')
+  pArticle.textContent = args.firstParagraph;4
+  const articelDate = document.createElement('p');
+  articelDate.classList.add('date')
+  articelDate.textContent = args.date;
+  const pArticle2 = document.createElement('p');
+  pArticle2.textContent = args.secondParagraph;
+  const pArticle3 = document.createElement('p');
+  pArticle3.textContent = args.thirdParagraph;
+  const spanButton = document.createElement('span');
+  spanButton.classList.add('expandButton');4
+  spanButton.textContent = 'Expand'
+  
+  // appending Child elements to the article div
   divArticle.classList.add('article')
   divArticle.appendChild(h2Article)
+  divArticle.appendChild(articelDate)
   divArticle.appendChild(pArticle)
+  divArticle.appendChild(pArticle2)
+  divArticle.appendChild(pArticle3)
   divArticle.appendChild(spanButton)
   return divArticle
 }
+// loops through the data 
+let div = document.querySelector('.articles')
+function dataIterator (args){
+  args.forEach(htmlElemText =>{
+     componentCreator(htmlElemText);
+     console.log(componentCreator(htmlElemText));
+    div.appendChild(componentCreator(htmlElemText))
+  });
+};
+dataIterator(data);
 
-let elem = componentCreator();
-console.log(elem)
